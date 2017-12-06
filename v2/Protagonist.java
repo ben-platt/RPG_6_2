@@ -1,5 +1,5 @@
 public class Protagonist extends Character{
-    public String name;
+    protected String name;
     public Protagonist(String input){
         name = input;
         HP = 300;
@@ -7,7 +7,7 @@ public class Protagonist extends Character{
         defense = 35;
         attack = 0.4;
     }
-    
+
     public void specialize(){
       	attack = attack * 2;
       	defense = defense / 2 - 5;
@@ -24,11 +24,11 @@ public class Protagonist extends Character{
 
     public String toString() {
 	return name + System.lineSeparator() +
-	    "HP: " + attack +
+	    "HP: " + HP +
 	    "strength: " + strength +
 	    "defense: " + defense +
 	    "attack: " + (int) (attack * 100);
     }
-	    
+
 
 }
