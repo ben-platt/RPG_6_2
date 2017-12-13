@@ -5,10 +5,10 @@
  **********************************************/
 
 // shorthand, used to read from CLI
-import java.io.*;
+import java.io.*;   
 import java.util.*;
 
-public class YoRPGmodBen
+public class YoRPG
 {
   // ~~~~~~~~~~~ INSTANCE VARIABLES ~~~~~~~~~~~
 
@@ -29,7 +29,7 @@ public class YoRPGmodBen
 
 
   // ~~~~~~~~~~ DEFAULT CONSTRUCTOR ~~~~~~~~~~~
-  public YoRPGmodBen()
+  public YoRPG()
   {
     moveCount = 0;
     gameOver = false;
@@ -44,8 +44,8 @@ public class YoRPGmodBen
 
   /*=============================================
     void newGame() -- gathers info to begin a new game
-    precondition:
-    post: according to user input, modifies instance var for difficulty
+    precondition:  
+    post: according to user input, modifies instance var for difficulty 
     and instantiates a Protagonist
     =============================================*/
   public void newGame()
@@ -73,10 +73,6 @@ public class YoRPGmodBen
     } catch ( IOException e ) { }
 
     //instantiate the player's character
-    //bob = new Character(String player);
-    //if player.equals("brutus") {
-    //bob = new  Brutus(name);
-
     pat = new Protagonist( name );
 
   }//end newGame()
@@ -129,7 +125,7 @@ public class YoRPGmodBen
 
 	    //option 1: you & the monster perish
 	    if ( !smaug.isAlive() && !pat.isAlive() ) {
-        System.out.println( "'Twas an epic battle, to be sure... " +
+        System.out.println( "'Twas an epic battle, to be sure... " + 
                             "You cut ye olde monster down, but " +
                             "with its dying breath ye olde monster. " +
                             "laid a fatal blow upon thy skull." );
