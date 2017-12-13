@@ -73,11 +73,22 @@ public class YoRPGmodBen
     } catch ( IOException e ) { }
 
     //instantiate the player's character
+<<<<<<< HEAD
     //bob = new Character(String player);
     //if player.equals("brutus") {
     //bob = new  Brutus(name);
 
     pat = new Protagonist( name );
+=======
+	  
+    
+    System.out.println("Choose a character, your choices are Brutus, CSDept, CeramicBloon, Teeny, Terry, Wolf. On the line below write chooseChar(yourChar)");
+    public void chooseChar(String char) {
+      Character pat = new char();
+    }
+	    
+    //pat = new Protagonist( name );
+>>>>>>> 37cbecec3fdba2305ba0b38deea95fbcf6431788
 
   }//end newGame()
 
