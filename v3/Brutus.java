@@ -5,4 +5,9 @@ public class Brutus extends Protagonist {
 	HP = 400; //100 more than regular
     }
 
+    public String toString() {
+	return "Brutus: " + System.lineSeparator() +
+	    "My special ability is smash: 400 SMASH!";
+    }
+
 }

@@ -4,4 +4,10 @@ public class Teeny extends Protagonist {
 	name = "Teeny";
 	attack = .7;
     }
+
+    public String toString() {
+	return "Teeny: " + System.lineSeparator() +
+	    "I'm real fast: I've got a .7 attack rating";
+    }
+    
 }
