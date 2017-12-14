@@ -10,7 +10,4 @@ public class Terry extends Protagonist {
 	return "Terry: " + System.lineSeparator() +
 	    "My special ability is that I'm very defensive: 60 to be exact";
     }
-    
-
-    
 }
